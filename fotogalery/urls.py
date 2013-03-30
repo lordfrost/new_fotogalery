@@ -8,6 +8,5 @@ from django.contrib import admin
 urlpatterns = patterns('',
     # url(r'^$', ''),
     # url(r'^fotogalery/', include('fotogalery.foo.urls')),
-    url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'^admin/', include(admin.site.urls)),
 )

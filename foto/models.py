@@ -12,7 +12,7 @@ class Item(models.Model):
     def __unicode__(self):
         return self.name
 
-#   @permalink
+    @models.permalink
     def get_absolute_url(self):
         return ('item_detail', None, {'object_id': self.id})
 
@@ -28,7 +28,7 @@ class Photo(models.Model):
     def __unicode__(self):
         return self.title
 
-#   @permalink
+    @models.permalink
     def get_absolute_url(self):
         return ('photo_detail', None, {'object_id': self.id})
 
